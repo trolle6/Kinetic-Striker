@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,7 +23,9 @@ jobs:
           distribution: 'temurin'
 
       - name: Build mod
-        run: ./gradlew build --no-daemon
+        run: |
+          chmod +x gradlew
+          ./gradlew build --no-daemon
 
       - name: Find release JAR
         id: jar
