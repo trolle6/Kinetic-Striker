@@ -11,12 +11,47 @@ A Minecraft Fabric mod that creates a Rocket League / Harry Potter Quidditch-sty
 - **Particle Effects**: Visual effects for goals, hits, and boosts
 - **Arena System**: Customizable arenas with goal zones
 
-## Installation
+## Installation (Players)
 
-1. Install [Fabric Loader](https://fabricmc.net/use/)
-2. Install [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-3. Place this mod's JAR file in your `mods` folder
-4. Launch Minecraft with the Fabric profile
+1. Install [Fabric Loader](https://fabricmc.net/use/) for **Minecraft 1.21.11**
+2. Install [Fabric API 0.141.2+1.21.11](https://modrinth.com/mod/fabric-api)
+3. Download the latest `tnt-rocket-leauge-*.jar` from [GitHub Releases](https://github.com/trolle6/Kinetic-Striker/releases)
+4. Place the JAR in your Minecraft `mods` folder
+5. Launch Minecraft with the Fabric profile
+
+## Development Setup (JetBrains Rider)
+
+### Clone the repo
+
+```bash
+git clone https://github.com/trolle6/Kinetic-Striker.git
+cd Kinetic-Striker
+```
+
+### Open in Rider
+
+1. Open Rider → **Open** → select the cloned folder
+2. Wait for Gradle to sync (uses Java 21)
+3. If prompted, trust the Gradle project and download Minecraft sources when asked
+
+### Run the mod locally
+
+Use the Gradle tool window (or terminal):
+
+```bash
+./gradlew runClient    # launch Minecraft with the mod
+./gradlew runServer    # launch a test server
+./gradlew build        # build the release JAR
+```
+
+The built mod JAR is written to `build/libs/tnt-rocket-leauge-1.0-SNAPSHOT.jar`.
+
+### Requirements
+
+- **JDK 21** (Rider: Settings → Build, Execution, Deployment → Build Tools → Gradle → Gradle JVM)
+- **Minecraft 1.21.11**
+- **Fabric Loader 0.18.1+**
+- **Fabric API 0.141.2+1.21.11**
 
 ## How to Play
 
