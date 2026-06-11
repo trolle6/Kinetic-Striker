@@ -1,0 +1,16 @@
+{
+  "item.tnt_rocket_leauge.boost": "Elytra Boost",
+  
+  "command.tntrl.start.success": "TNT Rocket League game started!",
+  "command.tntrl.stop.success": "TNT Rocket League game stopped!",
+  "command.tntrl.arena.set": "Arena boundaries set",
+  "command.tntrl.goal.set": "Goal zone set for %s team",
+  "command.tntrl.join.success": "You joined the %s team!",
+  "command.tntrl.leave.success": "You left the game",
+  
+  "game.tntrl.goal": "GOAL! %s team scores!",
+  "game.tntrl.score": "Score: RED %d - BLUE %d",
+  "game.tntrl.winner": "%s team wins!",
+  "game.tntrl.tie": "It's a tie!"
+}
+

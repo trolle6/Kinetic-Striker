@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "tnt_rocket_leauge",
+  "version": "${version}",
+  "name": "TnT Rocket League",
+  "description": "A Rocket League / Quidditch-style minigame using primed TNT, elytras, and fishing rods!",
+  "authors": ["Your Team"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tnt_rocket_leauge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "minigame.tnt_rocket_leauge.Tnt_rocket_leauge"
+    ]
+  },
+  "mixins": [
+    "tnt_rocket_leauge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

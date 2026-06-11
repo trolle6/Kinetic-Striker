@@ -1,0 +1,30 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "minigame.tnt_rocket_leauge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TntEntityMixin",
+    "TntItemThrowMixin",
+    "DispenserTntMixin",
+    "FishingHookMixin",
+    "FishingHookPullMixin",
+    "PlayerEntityMixin",
+    "PlayerMovementMixin",
+    "LivingEntityMixin",
+    "ProjectileMixin",
+    "AllayMixin",
+    "AllayItemPickupMixin",
+    "PlayerDismountMixin",
+    "ServerPlayerMixin",
+    "ItemUseMixin",
+    "ShieldBlockMixin",
+    "accessor.PlayerJumpAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
